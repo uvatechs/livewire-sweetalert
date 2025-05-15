@@ -1,0 +1,20 @@
+{
+  "name": "uvatechs/livewire-sweetalert",
+  "description": "Reusable SweetAlert integration for Laravel Livewire",
+  "autoload": {
+    "psr-4": {
+      "Uvatechs\\LivewireSweetAlert\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Uvatechs\\LivewireSweetAlert\\LivewireSweetAlertServiceProvider"
+      ]
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "livewire/livewire": "^3.0"
+  }
+}
