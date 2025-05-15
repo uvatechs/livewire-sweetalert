@@ -1,5 +1,6 @@
 {
   "name": "uvatechs/livewire-sweetalert",
+  "license": "MIT",
   "description": "Reusable SweetAlert integration for Laravel Livewire",
   "autoload": {
     "psr-4": {
