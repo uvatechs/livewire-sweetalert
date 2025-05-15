@@ -35,7 +35,17 @@ class SomeComponent extends Component
 4. Trigger confirmation dialogs:
 
 ```php
-$this->confirm('deleteConfirmed', ['id' => $id]);
+$this->confirm('deleteConfirmed', ['id' => $id], [
+            'title' => 'Are you sure?',
+            'text' => 'This action cannot be undone.',
+        ]);
+```
+
+```php
+public function deleteConfirmed($id)
+    {
+        // Handle confirmed deletion...
+    }
 ```
 
 ## Publishing Views
@@ -43,3 +53,11 @@ $this->confirm('deleteConfirmed', ['id' => $id]);
 ```bash
 php artisan vendor:publish --tag=views
 ```
+### Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests.
+
+
+### License
+
+This package is open-sourced software licensed under the MIT license.
